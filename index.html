@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food ordering site</title>
+    <link rel="stylesheet" href="./CSS/Login1.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 930px)" href="./CSS/phone.css">
+</head>
+
+<body>
+    <div class="slider">
+        <nav id="navbar">
+            <input id="nav-toggle" type="checkbox">
+            <div id="logo">
+                <img src="logo/logo.png">
+            </div>
+            <ul class="links">
+                <div class="list">
+                    <a href="#home">Home</a>
+                    <a href="#services-container">Services</a>
+                    <a href="#Meal-section">Meals</a>
+                    <a href="#client-section">Our clients</a>
+                    <a href="#about-section">About Us</a>
+                    <a href="#contactUs-section">Contact Us</a>
+                </div>
+                <div class="btcart">
+                    <button class="frontbtn"><a href="#cart-container" id="cart">MyCart</a></button>
+                    <div class="btn_grp">
+                        <button class="frontbtn" onclick="handleLogin()">Login</button>
+                        <button class="frontbtn" onclick="handleRegister()">Register</button>
+                    </div>
+                </div>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <section id="home">
+            <h1 class="h-primary center" id="head">Welcome to my OnlineMeal</h1>
+            <p> Find your delicious hot food!</p>
+            <a href="Login1.html">
+                <button class="btn" class="frontbtn" onclick="handleOrder()" id="btn">Order Now</button>
+            </a>
+        </section>
+    </div>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box center">
+                <img src="logo/foodOrd.jpg" />
+                <h2 class="h-secondary center">Food ordering</h2>
+                <p class="center">
+                    Choose your favourite meals from menu and order just sitting at home or from any place and your
+                    meal will be at your door within 15-20 minutes
+                </p>
+                <div>
+                    <button class="frontbtn">Read More</button>
+                </div>
+            </div>
+            <div class="box center">
+                <img src="logo/pizza.jpg" width="80px" height="60px" />
+                <h2 class="h-secondary center">Food Cattering</h2>
+                <p class="center">
+                    When you are organizing an event, Our Online meal can be a great assistant to you. We can be so
+                    helpful that we will be able to take some stress off you.
+                </p>
+                <div>
+                    <button class="frontbtn">Read More</button>
+                </div>
+            </div>
+            <div class="box center">
+                <img src="logo/bulk.png" />
+                <h2 class="h-secondary center">Bulk ordering</h2>
+                <p class="center">
+                    You can order food in large quantities, we will deliver best food with best pack.
+                    You will be offered large amount of discount on bulk orering!
+                </p>
+                <div class="cart-btn">
+                    <button class="frontbtn">Read Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- meal section -->
+        <section id="Meal-section">
+            <div class="title-container">
+                <h1 class="h-primary center">Our Meals</h1>
+            </div>
+            <div class="card">
+                <div class="item-container" id="0">
+                    <div class="card-item">
+                        <img src="./logo/pizzameal.jpg" alt="vegie pizza" id="card-img">
+                        <p id="item-name">Taco Quesadila Pizza</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 190</h3>
+                </div>
+                <div class="item-container" id="1">
+                    <div class="card-item">
+                        <img src="logo\bugermwal.jpg" alt="img" id="card-img">
+                        <p id="item-name">The full works burger</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 90</h3>
+                </div>
+                <div class="item-container" id="2">
+                    <div class="card-item">
+                        <img src="./logo/chole Bhature.jpg" alt="img" id="card-img">
+                        <p id="item-name">Chhole Bhature</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 160</h3>
+                </div>
+                <div class="item-container" id="3">
+                    <div class="card-item">
+                        <img src="./logo/biryani.jfif" alt="img" id="card-img">
+                        <p id="item-name">Biryani</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 200</h3>
+                </div>
+                <div class="item-container" id="4">
+                    <div class="card-item">
+                        <img src="./logo/Chilli-Potato.webp" alt="img" id="card-img">
+                        <p id="item-name">Chilli-Potato</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 350</h3>
+                </div>
+
+                <div class="item-container" id="5">
+                    <div class="card-item">
+                        <img src="./logo/idli.webp" alt="img" id="card-img">
+                        <p id="item-name">Idli Sambhar</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 240</h3>
+                </div>
+
+                <div class="item-container" id="6">
+                    <div class="card-item">
+                        <img src="./logo/samosa cholejpg.jpg" alt="img" id="card-img">
+                        <p id="item-name">Chhole Samosa </p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 285</h3>
+                </div>
+                <div class="item-container" id="6">
+                    <div class="card-item">
+                        <img src="./logo/samosa cholejpg.jpg" alt="img" id="card-img">
+                        <p id="item-name">Cholle Samosa </p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Price : Rs 285</h3>
+                </div>
+            </div>
+        </section>
+    <!-- end of main -->
+
+  
+    <!-- details page section -->
+    <div id="details-page">
+        <div class="details">
+            <div class="items-detail">
+                <div class="image-container">
+                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                </div>
+                <div class="details-card">
+                    <h2 id="detail-title">your's fav</h2>
+                    <h4 id="detail-price">Price : Rs 9,999</h4>
+                    <p id="you-save">You save : (Rs 4,000)</p>
+                    <p id="delievery"><strong>Delivery : </strong> 'In 15-25 minutes'</p>
+                    <p id="desc"><strong>Description :</strong></p>
+                    <p id="descP">lorem</p>
+                    <button id="carts">Add to Cart</button>
+                    <button id="buy">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of page detail -->
+
+<!-- my cart  -->
+    <div id="cart-container">
+        <p id="cart-title">Your <strong id="cart-title">Cart</strong></p>
+        <div id="empty-cart">
+            <h1>Your Cart is Empty...</h1>
+        </div>
+
+        <div id="cart-with-items">
+            <div class="cart-column">
+                <h3>Product</h3>
+                <h3>Product Name</h3>
+                <h3>Total </h3>
+                <h3>Quantity</h3>
+                <h3>Remove</h3>
+            </div>
+            <div id="item-body">
+            </div>
+            <div id="total">
+                <h3 id="total-items"></h3>
+                <h2 id="total-amount"></h2>
+                <h3 id="you-saved"></h3>
+            </div>
+        </div>
+        <div id="placeorder">
+            <button class="frontbtn" onclick="oderplace()">Oder Now</button>
+        </div>
+    </div>
+<!-- end of my cart  -->
+
+
+<!-- about-section -->
+    <section id="about-section">
+        <h1 class="h-primary center">About Us</h1>
+        <div class="about">
+            <div class="about-content">
+                <p>
+                    There’s nothing cut out about ‘Our Online Meal’ . Not our pizzas. Not our kin and our sandwiches.
+                    Also, unquestionably not the manner in which we live. Around here, we don’t make do with anything
+                    short of food we’re glad to serve. Furthermore, we don’t simply check-in.
+
+                    <br><br>
+
+                    Not when we can likewise turn into our best, make companions, and have some good times while we’re
+                    grinding away. We’re the fast-food organization that lives unpacked.<br><br>
+                    At Our Online Meal , we are not simply baking pizza but involved in other fast food like sandwiches,
+                    burgers and cookies. We make individuals happy and satisfy their hunger.Fizzy was based on the
+                    conviction that pizza night ought to be exceptional, and we convey that conviction into all that we
+                    do.
+                </p>
+                <br><br>
+                <button class="frontbtn">Read More</button>
+            </div>
+            <div class="chief">
+                <img src="./logo/1chIEF.jpg" alt="Master Chief" id="chief" />
+            </div>
+        </div>
+    </section>
+<!-- end of about section -->
+
+
+<!-- client section -->
+    <section id="client-section">
+        <h1 class="h-primary center" id="clt">Our clients</h1>
+        <div id="clients">
+            <div class="clients-items">
+                <img src="logo/apple.png">
+            </div>
+            <div class="clients-items">
+                <img src="logo/glogo.png" height="50px" width="100px">
+            </div>
+            <div class="clients-items">
+                <img src="logo/micro.png">
+            </div>
+            <div class="clients-items">
+                <img src="logo/skype.png">
+            </div>
+        </div>
+    </section>
+<!-- end of client section -->
+
+
+<!-- contact section -->
+    <section id="contactUs-section">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="form-container">
+            <form action="" id="form1">
+                <div class="inputbox">
+                    <input type="text" name="" id="" required>
+                    <h3>Full name</h3>
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="" id="" required>
+                    <h3>E-mail</h3>
+                </div>
+                <div class="inputbox">
+                    <textarea type="text" name="" id="" rows="10" required></textarea>
+                    <h3>Message</h3>
+                </div>
+                <!-- <input type="submit" value="send"> -->
+                <button class="frontbtn">Send</button>
+            </form>
+        </div>
+    </section>
+<!-- end of contact section -->
+
+
+    <!-- details page section -->
+    <div id="details-page">
+        <div class="details">
+            <div class="items-detail">
+                <div class="image-container">
+                    <img src="/images/redmiK20.jpg" alt="" id="details-img">
+                </div>
+                <div class="details-card">
+                    <h2 id="detail-title">Samsung Galaxy</h2>
+                    <h4 id="detail-price">Price : Rs 9,999</h4>
+                    <p id="you-save">You save : (Rs 4,000)</p>
+                    <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+                    <p id="spec"><strong>Specification :</strong>
+
+                    <ul>
+                        <li>13MP AI triple main camera + 2MP bokeh (depth of field) camera + 2MP macro camera with
+                            photo, video, professional mode panorama, portrait, time-lapse etc. | 16MP front punch
+                            hole camera</li>
+
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
+
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime reiciendis
+                            laborum! Velit odit molestias architecto doloremque est sapiente. </li>
+                    </ul>
+                    </p>
+                    <button id="carts">Add to Cart</button>
+                    <button id="buy">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of page detail -->
+
+
+
+    <div class="socials">
+        <a href="https://twitter.com/Roshni9518" target="_blank"><img src="./logo/twwet.png" alt="Twitter"
+                class="socicon"></a>
+        <a href="#" target="_blank"><img src="./logo/instagram.gif" alt="Instagram" class="socicon"></a>
+        <a href="https://github.com/roshni2072004" target="_blank"><img src="./logo/github.gif" alt="Github"
+                class="socicon"></a>
+    </div>
+
+    <footer>
+        <div class="ufoot">
+            <div class="fcol center">
+                <h1 class="fheading ycolor">Link</h1>
+                <div id="flinks">
+                    <ul class="footlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services-container">Services</a></li>
+                    </ul>
+                    <ul class="footlinks">
+                        <li><a href="#client-section">Our clients</a></li>
+                        <li><a href="#main">Our meals</a></li>
+                    </ul>
+                    <ul class="footlinks">
+                        <li><a href="#about-section">About Us</a></li>
+                        <li><a href="#contact-section">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="letter fcol center">
+                <h2 class="fheading ycolor">Newsletter</h2>
+                <input type="text">
+                <input type="submit" value="Subscribe" id="subs" onclick="subscribe()">
+            </div>
+        </div>
+        <div class="center copyright">&copy;copyright @2022 www.onlineMeal.com by <span class="ycolor">Roshni</span>
+        </div>
+    </footer>
+    <script>
+        function handleOrder() {
+            document.location.href = "Login1.html";
+        }
+        function handleLogin() {
+        document.location.href = "Login1.html";
+        }
+        function handleRegister() {
+            document.location.href = "Login1.html";
+        }
+    </script>
+</body>
+<script src="./JS/site.js"></script>
+
+</html>

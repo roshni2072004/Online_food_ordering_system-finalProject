@@ -1,0 +1,358 @@
+#logo {
+    margin: 0px 10px;
+    margin-top:0px ;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin-top:0px ;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    box-sizing: border-box;
+}
+nav .links{
+    margin-left: 0;
+    width: 100%;
+}
+nav .links li{
+    padding: 0;
+    margin: 0;
+}
+nav .links li {
+    margin: 0px 0px;
+}
+nav .links a {
+    height: .3rem;
+    font-size: 16px;
+    width: 5.4rem;
+}
+nav li a:hover {
+    padding: 1px 1px 1px 1px;
+}
+nav .btcart button a {
+    margin: -0.5rem -14px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(41, 40, 40);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    /* height: 120px; */
+    width: 100%;
+    opacity: .4;
+}
+.h-secondary{
+    font-size: 1.2rem;
+}
+.btn{
+    font-size: 13px;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    margin-top: 5px;
+}
+.frontbtn {  
+    height: 30px;
+}
+.list {
+    display: flex;
+    width: 66%;
+    margin-right: 2rem;
+
+}
+.btn_grp{
+    display: flex;
+}
+.btcart button{
+    width: 4.2rem;
+}
+
+
+
+/*hOme section*/
+#home{
+    height: 300px;
+    margin-bottom: 0px;
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+#head{
+    width: 100%;
+    font-size: 3rem;
+  }
+.slider{
+    height: 350px;
+}
+@keyframes animate {
+    0%,100% {
+      background-image: url("../logo/kitchen1.jpg");
+      width: 100%;
+      opacity: 0.9;
+    }
+    25% {
+      background-image: url("../logo/food_back.png");
+      opacity: 0.9;
+    }
+    50% {
+      background-image: url("../logo/hotel_kitchen1.jpg");
+      opacity: 0.9;
+    }
+    75% {
+      background-image: url("../logo/indian-food.webp");
+      opacity: 0.9;
+    }
+  }
+#home p{
+    font-size: 18px;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+}
+
+/* service section */
+#services{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+#services .box{
+    width: 90%;
+    height: 300px;
+}
+#services{
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#services-container {
+    margin: 350px 1rem 0 1rem;
+}
+
+
+
+
+/* client section */
+#clients{
+    flex-wrap: wrap;
+}
+#client-section::before{
+        height: 240px;
+}
+#client-section .clients-items{
+    flex-wrap: wrap;
+}
+#client-section .clients-items{
+    display: flex;
+    flex-direction: column;
+    margin:  0px 5px;
+}
+#client-section #clients img{
+    width: 55px;
+    height: 55px;
+    margin: 2px 20px;
+
+}
+#client-section{
+    display: flex;
+    /* padding: 30px 0px; */
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: 229px;
+}
+#client-section #clients {
+    margin-top: 5px;
+}
+
+
+/* contact us */
+.form-container {
+    width: 70%;
+    margin-left: 8%;
+    /* margin-bottom: 2rem; */
+  }
+
+
+  /* About-section */
+.about{
+    flex-direction: column;
+}
+.about div{
+    width: 91%;
+}
+.about p{
+    padding: 5px 1rem;
+}
+.about-content p {
+    margin-top: -60px;
+  }
+#chief{
+    height: 300px;
+}
+.about-content {
+    margin: 13% 0rem 0 2rem;
+}
+
+
+
+
+/* detail --meal */
+#details-img {
+    width: 12rem;
+    height: 13rem;
+}
+#detail-title{
+    font-size: 2rem;
+}
+
+ @media (max-width: 660px) {
+
+  #navbar::before {
+    height: 64px;
+  }
+  nav #logo {
+    float: none;
+    width: 167px;
+    justify-content: center;
+  }
+  #logo img {
+    height: 50px;
+    width: 50px;
+  }
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 50%;
+    right: 0;
+    top: 59px;
+    bottom: 94%;
+    width: 55%;
+    height: auto;
+    margin-bottom: 220px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  .list{
+    flex-direction: column;
+  }
+  nav .links a {
+    font-size: 20px;
+    width: 110px;
+    height: 34px;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav .links{
+    left:45%;
+    width: 55%;
+    }
+    .list{
+        width: 15%;
+    }
+    nav .btcart {
+        display: flex;
+        width: 54%;
+    }
+    #cart-with-items{
+        margin-top: 5rem;
+        font-size: 1.2rem;
+    }
+
+} 
+@media (max-width: 500px) {
+    nav .btcart button a {
+        margin: 0.5rem 0px;
+    }
+    .btcart button {
+        width: 7.2rem;
+    }
+    #head{
+        font-size: 2rem;
+    }
+    .card-item {
+        width: 90%;
+    } 
+    .item-container {
+        width: 94%;
+        margin: .5rem 0;
+    }
+    .card {
+        display:contents;
+        /* grid-template-columns: auto auto; */
+    }
+    #card-img {
+        max-height: 10rem;
+    }
+    #item-price {
+        margin-top: 2.6rem;
+    }
+    #item-name{
+        margin-top: .5rem;
+    }
+    #services-container {
+        margin: 350px 0rem 0 0rem;
+    }
+    nav .btcart {
+        flex-direction: column;
+        width: 62%;
+    }
+    nav .links{
+        left:45%;
+        width: 55%;
+    }
+    nav .links a {
+        font-size: 20px;
+    }
+    .list{
+        width: 15%;
+    }
+    #details-page{
+        left: 5%;
+        width: 90%;
+    }
+
+    .cart-column h3{
+        font-size: 17px;
+    }
+    #total{
+        margin-left: 22%;
+    }
+    .footlinks a{
+        font-size: 12px;
+    }
+    .fheading {
+        font-size: 1.2rem;
+    }
+    .ufoot {
+        flex-direction: column;
+     }
+     .ufoot .fcol {
+         width: 100%;
+     }
+}
+
+
+section{
+    margin-bottom: 2rem;
+}
+
+/* footer */
+.copyright {
+    font-size: 1rem;
+  }
+
+
+
+

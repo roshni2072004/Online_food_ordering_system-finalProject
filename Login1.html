@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 930px)" href="./CSS/phone.css">
+    <link rel="stylesheet" href="./CSS/Login.css">
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="./CSS/Phnlogin.css">
+    <!-- google authentication -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <input id="nav-toggle" type="checkbox">
+        <div id="logo">
+            <img src="logo/logo.png">
+        </div>
+        <ul class="links">
+            <div class="list">
+                <a href="./index.html">Home</a>
+                <a href="#services-container">Services</a>
+                <a href="#main">Meals</a>
+                <a href="#client-section">Our clients</a>
+                <a href="#about-section">About Us</a>
+                <a href="#contactUs-section">Contact Us</a>
+            </div>
+            <!-- <div class="btcart">
+                <button class="frontbtn"><a href="newcart.html" id="cart" target="_blank">MyCart</a></button>
+                <div class="btn_grp">
+                    <button class="frontbtn" onclick="handleLogin()">Login</button>
+                    <button class="frontbtn" onclick="handleRegister()">Register</button>
+                </div>
+            </div> -->
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="container">
+        <!-- <div id="go-to-Home"><a href="index.html">Go to Home</a></div> -->
+        <div class="form-box">
+            <div class="btn-box">
+                <div id="btn1"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <!-- login with -->
+            <div class="social-icons">
+                <img onclick="googlelogin()" src="./logo/google.webp" id="gog" alt="google">
+                <div class="centre">or</div>
+            </div>
+            <div>
+                <form id="login" class="input-grp">
+                    <input type="text" class="input-field" placeholder="User Id / Email-id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span><br>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="register" action="User.html" class="input-grp">
+                    <div class="input-control">
+                        <!-- <label for="username">Username</label> -->
+                        <!-- <input id="username" name="username" type="text" required> -->
+                        <input id="username" class="input-field" name="username" type="text" placeholder="Username"
+                            required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="email" class="input-field" name="email" type="email" placeholder="Email" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="password" class="input-field" name="password" type="password" placeholder="Password"
+                            required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="password2" class="input-field" name="password2" type="password"
+                            placeholder="Confirm Password" required>
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="registered()">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn1");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "8%";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "8%";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+        function handlelogin() {
+            document.location.href = "https://www.facebook.com/";
+        }
+        function googlelogin() {
+            document.location.href = "https://accounts.google.com/";
+        }
+        function tweetlogin() {
+            document.location.href = "https://twitter.com/";
+        }
+
+
+    </script>
+    <script src="./JS/form.js"></script>
+</body>
+
+</html>
