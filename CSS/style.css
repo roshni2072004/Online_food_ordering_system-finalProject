@@ -122,17 +122,6 @@ nav .links li {
   text-align: center;
   justify-content: center;
 }
-/* nav .links a {
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  display: block;
-  padding: 12px 1em;
-  color: white;
-  font-size: 20px;
-  width: 100px;
-} */
 nav .links a {
   justify-content: center;
   text-align: center;
@@ -141,6 +130,11 @@ nav .links a {
   color: white;
   font-size: 20px;
   width: 7rem;
+}
+nav .links a:hover{
+  background-color: white;
+  border-radius: 16px;
+  color: black;
 }
 #nav-toggle {
   position: absolute;
@@ -367,7 +361,6 @@ label {
   border-radius: 10px;
 }
 #send {
-  /* margin-left: 55%; */
   width: 80px;
   height: 28px;
 }
@@ -375,51 +368,7 @@ label {
 
 
 /* main section */
-.brand{
-  width: 4rem;
-  text-align: center;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-.img-container{
-  width: 4rem;
-  height: 4rem;
-  background: rgba(0, 128, 128, 0.278);
-  border-radius: 50%;
-  position: relative;
-}
-.brand-img{                                      
-  height: 4.2rem;
-  width: 2.2rem;
-  position: relative;
-  top: -2.5px;
-  margin: auto;
-  text-align: center;
-}
-#brand-name{
-  font-family: sans-serif;
-  text-transform: capitalize;
-  margin-top: 10px;
-  color: teal;
-}
 
-
-#item-btn{
-  outline: none;
-  border: none;
-  background: rgb(126, 202, 228);
-  color: white;
-  padding: 0 0.5rem;
-  font-size: 1.2rem;
-  margin-right: 0.5rem;
-}
-#item-btn:active{
-  background: rgb(4, 167, 243);
-}
-#title{
-  font-size: 2rem;
-  background: white;
-}
 .card{
   display: grid;
   grid-template-columns: auto auto ;
@@ -433,12 +382,8 @@ label {
 .item-container{
   margin: .2rem;
   background: white;
-  position: relative;
   background: white;
   padding: 15px 12px;
-  position: relative;
-  /* z-index: -1; */
- 
 }
 .item-container:hover #card-img{
   transform: scale(1.2);
@@ -448,7 +393,6 @@ label {
   cursor: pointer;
 }
 #card-img{
-  position: relative;
   max-width: 100%;
   max-height: 8rem;
   text-align: center;
@@ -490,15 +434,9 @@ label {
   width: 55%;
   top: 20%;
   background: none;
-  /* z-index: -1; */
 }
-/* #details-page::before{
-  opacity: .5;
-  background-color: black;
-} */
 .details{
   position: relative;
-  /* height: 40vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,7 +450,6 @@ label {
   opacity: .9;
   width: 60vw;
   height: 70vh;
-  /*  */
 }
 .image-container{
   padding: 2rem;
@@ -522,7 +459,6 @@ label {
   width: 15rem;
   height: 15rem;
 }
-
 
 #detail-title{
   margin-top: 1rem;
@@ -586,6 +522,7 @@ label {
   background: white;
   color:rgb(167, 179, 5);
 }
+
 
 
 /* cart list section*/
@@ -666,8 +603,8 @@ label {
   color: white;
 }
 
-/* contact-us section */
 
+/* contact-us section */
     #contactUs-section {
       width: 100%;
       background-size: cover;

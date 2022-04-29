@@ -12,15 +12,15 @@ function login() {
   y.style.left = "450px";
   z.style.left = "0";
 }
-function handlelogin() {
-  document.location.href = "https://www.facebook.com/";
-}
-function googlelogin() {
-  document.location.href = "https://accounts.google.com/";
-}
-function tweetlogin() {
-  document.location.href = "https://twitter.com/";
-}
+// function handlelogin() {
+//   document.location.href = "https://www.facebook.com/";
+// }
+// function googlelogin() {
+//   document.location.href = "https://accounts.google.com/";
+// }
+// function tweetlogin() {
+//   document.location.href = "https://twitter.com/";
+// }
 
 
 
@@ -37,6 +37,8 @@ form.addEventListener("submit", (event) => {
   validateForm();
   if (isFormValid() == true) {
     form.submit();
+    // form.registered();
+    // document.location.href = "index.html";
   } else {
     event.preventDefault();
   }
@@ -111,9 +113,6 @@ function registered(){
   if(!validateForm()){
     alert("Please fill in the 'Your Name' box.");
   }
-  // if (document.inputgrp.input.value === "") {
-  //     alert("Please fill in the 'Your Name' box.");
-  // }
   else {
       alert("you are registered");
   }

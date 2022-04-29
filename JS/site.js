@@ -1,7 +1,7 @@
 const data = [
   {
     id: 0,
-    img: "logopizzameal.jpg",
+    img: "./logo/pizzameal.jpg",
     name: "Taco Quesadila Pizza",
     price: 190,
     save: 25,
